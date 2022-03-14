@@ -121,6 +121,16 @@
   },
   "components": {
     "schemas": {
+      "AccountDetail": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
       "Address": {
         "type": "object",
         "properties": {
@@ -165,6 +175,9 @@
               "$ref": "#/components/schemas/Address"
             },
             "nullable": true
+          },
+          "accountDetail": {
+            "$ref": "#/components/schemas/AccountDetail"
           }
         },
         "additionalProperties": false
