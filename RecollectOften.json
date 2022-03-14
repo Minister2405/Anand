@@ -183,7 +183,7 @@
         "additionalProperties": false
       },
       "WeatherForecast": {
-        "type": "object",
+        "type": "o",
         "properties": {
           "date": {
             "type": "string",
